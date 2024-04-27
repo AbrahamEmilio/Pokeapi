@@ -1,0 +1,72 @@
+.main{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+}
+
+.body{
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.search{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemons{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 50px;
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECEBEA;
+    border-radius: 20px;
+}
+
+.ability{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.pokemonName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.abilityTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.abilityElement{
+    list-style: none;
+    padding: 0px;
+}
+
+.abilityList{
+    padding: 0px;
+}
+
+.pokemon{
+    width: 150px;
+    cursor: pointer;
+}
+
+.inactive{
+    display: none;
+}
