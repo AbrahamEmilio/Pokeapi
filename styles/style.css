@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 .main{
     width: 100%;
 }
@@ -15,6 +20,10 @@
     display : flex;
     justify-content: center;
     align-items: center;
+    background-color: orange;
+    width: 100%;
+    padding: 100px 0px;
+    gap: 50px;
 }
 
 .pokemons{
@@ -22,12 +31,11 @@
     padding: 20px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap: 50px;
+    gap: 10px;
 }
 
 .card{
-    width: 300px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,4 +77,8 @@
 
 .inactive{
     display: none;
+}
+
+.tittleHeader{
+    font-family: Arial, Helvetica, sans-serif;
 }
