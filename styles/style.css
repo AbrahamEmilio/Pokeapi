@@ -81,4 +81,17 @@
 
 .tittleHeader{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.searchInput{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.searchButton{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
