@@ -2,6 +2,10 @@ const pokemonsContainer = document.querySelector('#pokemons');
 const searchInput = document.querySelector('#searchInput');
 const searchButton = document.querySelector('#searchButton');
 
+function ButtonMoreF (){
+    buttonMore.textContent = 'Ver Menos'
+}
+
 function pokemons(i){
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then((res) => res.json())
@@ -14,6 +18,7 @@ function pokemons(i){
         const abilityTitle = document.createElement('p');
         const abilityList = document.createElement('ul');
         const closed = document.createElement('img');
+        const buttonMore = document.createElement('button');
 
         card.classList.add('card');
         pokemon.classList.add('pokemon');
@@ -21,8 +26,12 @@ function pokemons(i){
         abilitiesCont.classList.add('abilitiesCont');
         abilityTitle.classList.add('abilityTitle');
         abilityList.classList.add('abilityList');
-        closed.classList.add('closed')
+        closed.classList.add('closed');
+        buttonMore.classList.add('buttonMore');
+        buttonMore.setAttribute('id', 'buttonMore');
 
+
+        buttonMore.textContent = 'Ver mas'
 
         pokemon.src = e.sprites.front_default;
         pokemonName.textContent = e.name;
@@ -47,7 +56,7 @@ function pokemons(i){
         abilityTitle.textContent = 'Habilities';
 
         abilitiesCont.append(abilityTitle, abilityList)
-        card.append(closed, pokemon, pokemonName, abilitiesCont)
+        card.append(closed, pokemon, pokemonName, abilitiesCont, buttonMore)
 
         closed.classList.add('inactive');
         //pokemonName.classList.add('inactive');
@@ -55,12 +64,15 @@ function pokemons(i){
 
         pokemon.addEventListener('click', () => {
             closed.classList.toggle('inactive');
-            pokemonName.classList.toggle('inactive');
+            //pokemonName.classList.toggle('inactive');
             abilitiesCont.classList.toggle('inactive');
         })
 
         pokemonsContainer.append(card);
 
+        buttonMore.addEventListener('click', ()=>{
+            ButtonMoreF();
+        })
     })
 }
 
@@ -132,10 +144,13 @@ function searchPokemon (pokemonSearched) {
 
         pokemon.addEventListener('click', () => {
             closed.classList.toggle('inactive');
-            pokemonName.classList.toggle('inactive');
+            //pokemonName.classList.toggle('inactive');
             abilitiesCont.classList.toggle('inactive');
         })
 
         pokemonsContainer.append(card);
     })
 }
+
+
+

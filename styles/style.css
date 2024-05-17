@@ -13,35 +13,38 @@
 
 .body{
     width: 100%;
-    padding: 100px 0px;
+    padding: 0px 0px;
 }
 
 .search{
     display : flex;
     justify-content: center;
     align-items: center;
-    background-color: orange;
+    background-color: #6600ff;
     width: 100%;
     padding: 100px 0px;
     gap: 50px;
 }
 
 .pokemons{
-    width: 100%;
-    padding: 20px;
+    width: 70%;
+    padding: 100px 0px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 10px;
+    margin: 0px auto;
 }
 
 .card{
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ECEBEA;
+    background-color:  #f4f4f4;
     border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 35px;
 }
 
 .ability{
@@ -52,7 +55,8 @@
 .pokemonName{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    margin: 0px;
+    margin: 0px 0px 10px 0px;
+    color:  #404040 ;
 }
 
 .abilityTitle{
@@ -68,6 +72,7 @@
 
 .abilityList{
     padding: 0px;
+    text-align: center;
 }
 
 .pokemon{
@@ -86,12 +91,29 @@
 }
 
 .searchInput{
-    padding: 10px;
     border-radius: 20px;
+    border: none;
+    width: 400px;
+    padding: 10px 10px 10px 20px;
 }
 
 .searchButton{
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
+    background-color: #cc99ff;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.buttonMore{
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
 }
