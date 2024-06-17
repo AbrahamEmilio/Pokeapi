@@ -35,7 +35,7 @@ function createCards(e){
     pokemonInfo.classList.add('pokemonInfo')
 
 
-    buttonMore.textContent = 'Ver Mas'
+    buttonMore.textContent = 'See more'
 
     pokemon.src = e.sprites.front_default;
     pokemonName.textContent = e.name.toUpperCase();
@@ -110,13 +110,13 @@ function createCards(e){
         abilityList.classList.toggle('inactive');
         abilitiesCont.classList.toggle('modify')
 
-        if(buttonMore.textContent === 'Ver Mas'){
+        if(buttonMore.textContent === 'See more'){
             console.log('push')
-            buttonMore.textContent = 'Ver Menos'
+            buttonMore.textContent = 'Hide'
             abilityTitle.classList.add('inactive');
         } else {
             console.log('push')
-            buttonMore.textContent = 'Ver Mas'
+            buttonMore.textContent = 'See more'
             abilityTitle.classList.remove('inactive');
         }
 
