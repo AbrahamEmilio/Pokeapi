@@ -113,9 +113,11 @@ function createCards(e){
         if(buttonMore.textContent === 'Ver Mas'){
             console.log('push')
             buttonMore.textContent = 'Ver Menos'
+            abilityTitle.classList.add('inactive');
         } else {
             console.log('push')
             buttonMore.textContent = 'Ver Mas'
+            abilityTitle.classList.remove('inactive');
         }
 
         pokemon.classList.toggle('pokemonModify')

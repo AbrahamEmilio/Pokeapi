@@ -18,6 +18,8 @@ $breakpoint-desktop: 1440px; */
 .body{
     width: 100%;
     padding: 0px 0px;
+    background: rgb(119,0,255);
+    background: linear-gradient(54deg, rgba(119,0,255,1) 0%, rgba(0,215,255,1) 100%); 
 }
 
 .search{
@@ -25,16 +27,14 @@ $breakpoint-desktop: 1440px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(119,0,255);
-    background: linear-gradient(54deg, rgba(119,0,255,1) 0%, rgba(0,215,255,1) 100%); 
     width: 100%;
-    padding: 100px 0px;
+    padding: 50px 0px;
     gap: 50px;
 }
 
 .pokemons{
     width: 90%;
-    padding: 100px 0px;
+    padding: 0px 0px 100px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,7 +49,11 @@ $breakpoint-desktop: 1440px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:  #f4f4f4;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.10);
     border-radius: 20px;
     margin-bottom: 35px;
     padding: 0px 40px 0px 40px;
@@ -81,7 +85,6 @@ $breakpoint-desktop: 1440px; */
 }
 
 .pokemonContainer{
-    background-color: white;
     border-radius: 200px;
     margin-bottom: 20px;
     width: 200px;
@@ -94,20 +97,22 @@ $breakpoint-desktop: 1440px; */
 .ability{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-weight: 500;
+    color: white;
 }
 
 .pokemonName{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin: 0px 0px 10px 0px;
-    color:  #404040;
+    color:  white;
 }
 
 .abilityTitle{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #404040;
+    color: white;
 }
 
 .abilityElement{
@@ -131,7 +136,7 @@ $breakpoint-desktop: 1440px; */
 }
 
 .abilitiesCont{
-    background-color: white;
+    border: 1px solid white;
     padding: 5px 10px;
     width: 100%;
     text-align: center;
@@ -148,7 +153,7 @@ $breakpoint-desktop: 1440px; */
 }
 
 .pokemon{
-    width: 180px;
+    width: 220px;
     cursor: pointer;
 }
 
@@ -211,7 +216,7 @@ $breakpoint-desktop: 1440px; */
     padding: 7px 20px;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #6600ff;
+    background-color: #42008E;
     color: white;
 }
 
